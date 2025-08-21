@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no" />
+    <title>CBSE AR SmartBook</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+        "mindar-image-three": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-three.prod.js"
+      }
+    }
+    </script>
+    <style>
+      :root { --bg:#0b0b0c; --fg:#fff; --muted:#9aa0a6; }
+      html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+      #container { position: fixed; inset: 0; }
+      .hud { position: fixed; top:0; left:0; right:0; padding:10px 14px; background:rgba(0,0,0,.35); backdrop-filter: blur(4px); display:flex; gap:12px; align-items:center; z-index:10; }
+      .row { display:flex; gap:10px; align-items:center; flex-wrap: wrap; }
+      .hud .title { font-weight:600; }
+      .hud .small { font-size:12px; color:var(--muted); }
+      .right { margin-left:auto; display:flex; gap:8px; align-items:center; }
+      button, select { border:1px solid #2a2a2b; background:#151517; color:#fff; border-radius:10px; padding:8px 12px; cursor:pointer; }
+      button:disabled { opacity:.6; cursor:not-allowed; }
+      .toast { position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,.6); color:#fff; padding:10px 14px; border-radius: 10px; font-size: 13px; display:none; z-index:10; }
+      .legend { position: fixed; bottom: 8px; right: 8px; background: rgba(0,0,0,.35); padding: 8px 10px; border-radius: 10px; font-size: 12px; color: var(--muted); z-index:10; }
+      .panel { position: fixed; left: 8px; bottom: 8px; right: 8px; max-height: 42%; overflow:auto; background: rgba(0,0,0,.4); border-radius: 12px; padding:10px; z-index:10; display:none; }
+      .panel h3 { margin: 0 0 6px 0; font-size: 14px; }
+      .hotspot { padding:8px; border:1px solid #2a2a2b; border-radius:10px; margin:6px 0; background: #111; }
+      .hotspot .t { font-weight:600; font-size: 13px; }
+      .hotspot .b { font-size: 12px; color: var(--muted); }
+      .pill { font-size: 11px; padding:3px 7px; border-radius: 999px; background:#1f1f22; border:1px solid #2a2a2b; }
+      a, a:visited { color:#b6e3ff; }
+    </style>
+  </head>
+  <body>
+    <div class="hud">
+      <div>
+        <!-- <div class="title">CBSE AR SmartBook — MindAR + JSON Mapping</div> -->
+        <div class="title">CBSE AR SmartBook</div>
+        <!-- <div class="small">Scan a target. The right model & labels are loaded from mapping JSON.</div> -->
+         <div class="small">Scan a target.</div>
+      </div>
+      <div class="right row">
+        <span class="small">Language</span>
+        <select id="langSel">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button id="togglePanelBtn" disabled>Labels</button>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn" disabled>Stop</button>
+      </div>
+    </div>
+    <div id="container"></div>
+    <div id="toast" class="toast"></div>
+    <!-- <div id="legend" class="legend">Targets: MindAR sample (index 0). Replace with your compiled <code>targets.mind</code>.</div> -->
+    <div id="panel" class="panel" aria-live="polite"></div>
+
+    <script type="module">
+      import * as THREE from 'three';
+      import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+      import { MindARThree } from 'mindar-image-three';
+
+      // CONFIG ------------------------------------------------------------------
+      // Replace with local compiled targets file when ready:
+      // const imageTargetSrc = "./assets/targets/targets.mind";
+      // const imageTargetSrc = "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind";
+      const imageTargetSrc = "./assets/targets/targets.mind"
+      // Mapping JSON:
+      const mappingUrl = "./assets/mapping/figure_model_mapping.json";
+      // -------------------------------------------------------------------------
+
+      const container = document.querySelector('#container');
+      const hudStart = document.getElementById('startBtn');
+      const hudStop = document.getElementById('stopBtn');
+      const toast = document.getElementById('toast');
+      const panel = document.getElementById('panel');
+      const togglePanelBtn = document.getElementById('togglePanelBtn');
+      const langSel = document.getElementById('langSel');
+
+      let mapping = null;
+      // let currentFigure = null;
+      // let currentModel = null;
+      // let currentHotspots = [];
+      // let currentTargetIndex = 1;
+      let lang = 'en';
+      const anchors = []; // store anchors for each target
+      const models = {};  // track loaded models by target index
+
+      const mindarThree = new MindARThree({ container, imageTargetSrc });
+      const {renderer, scene, camera} = mindarThree;
+      // const anchor0 = mindarThree.addAnchor(0); // extend for more targets
+
+      // lights
+      const hemi = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
+      scene.add(hemi);
+      const dir = new THREE.DirectionalLight(0xffffff, 0.9);
+      dir.position.set(1,2,1);
+      scene.add(dir);
+      const dir1 = new THREE.DirectionalLight(0xffffff, 1);
+      dir1.position.set(2,4,2);
+      scene.add(dir1);
+      const dir2 = new THREE.DirectionalLight(0xffffff, 1);
+      dir2.position.set(-2,-2,-2);
+      scene.add(dir2);
+      const ambient = new THREE.AmbientLight(0xffffff, 1); // soft white light
+      scene.add(ambient);
+      const envLoader = new THREE.CubeTextureLoader();
+      const envMap = envLoader.load([
+        'assets/env/px.jpg', 'assets/env/nx.jpg',
+        'assets/env/py.jpg', 'assets/env/ny.jpg',
+        'assets/env/pz.jpg', 'assets/env/nz.jpg'
+      ]);
+
+      scene.environment = envMap;
+
+      scene.background = null; 
+
+      // Better rendering
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.2;
+
+      const loader = new GLTFLoader();
+
+      async function loadMapping() {
+        const res = await fetch(mappingUrl);
+        if (!res.ok) throw new Error('Mapping fetch failed');
+        mapping = await res.json();
+      }
+
+      function getFigureForTarget(index) {
+        if (!mapping || !mapping.targets) return null;
+        return mapping.targets.find(t => t.targetIndex === index) || null;
+      }
+
+      async function loadModel(url) {
+        return new Promise((resolve, reject) => {
+          loader.load(url, (gltf) => {
+            const m = gltf.scene;
+            // m.scale.set(0.15, 0.15, 0.15);
+            m.traverse((child) => {
+              if (child.isMesh && child.material) {
+                child.material.needsUpdate = true;
+                child.material.envMapIntensity = 1.2; // make reflections brighter
+              }
+            });
+            // m.scale.set(1, 1, 1);
+            m.position.set(0, 0, 0);
+            // m.rotation.set(0, Math.PI, 0);
+            resolve(m);
+          }, undefined, reject);
+        });
+      }
+
+      async function loadHotspots(url) {
+        try {
+          const res = await fetch(url);
+          if (!res.ok) return [];
+          const data = await res.json();
+          return data?.hotspots || [];
+        } catch {
+          return [];
+        }
+      }
+
+      function renderHotspots(figure, hotspot) {
+        // if (!currentHotspots || currentHotspots.length === 0) {
+        //   panel.innerHTML = '<div class="small">No labels for this figure.</div>';
+        //   return;
+        // }
+        if (!hotspot || hotspot.length === 0) {
+          panel.innerHTML = '<div class="small">No labels for this figure.</div>';
+          return;
+        }
+        // const items = currentHotspots.map(h => {
+        const items = hotspot.map(h => {
+          const title = h.title?.[lang] || h.title?.en || '';
+          const body = h.body?.[lang] || h.body?.en || '';
+          return `<div class="hotspot">
+              <div class="t">${title}</div>
+              <div class="b">${body}</div>
+            </div>`;
+        }).join('');
+        // const head = currentFigure ? `<div class="row" style="justify-content:space-between;">
+          const head = figure ? `<div class="row" style="justify-content:space-between;">
+            <h3>${(figure.displayName || figure.figure_id) ?? ''}</h3>
+            <span class="pill">${lang === 'en' ? 'Labels' : 'लेबल'}</span>
+          </div>` : '';
+        panel.innerHTML = head + items;
+      }
+
+      function clearCurrentModel() {
+        if (currentModel) {
+          anchor0.group.remove(currentModel);
+          currentModel = null;
+        }
+      }
+
+      async function onTargetFound(index) {
+        const figure = getFigureForTarget(index);
+        // currentTargetIndex = index;
+        // currentFigure = getFigureForTarget(index);
+        if (!figure) {
+          showToast('No mapping for this target ${index}.');
+          return;
+        }
+        // clearCurrentModel();
+        if(!models[index]){
+          try {
+            const [model, hotspots] = await Promise.all([
+              loadModel(figure.model_url),
+              loadHotspots(figure.hotspots_url)
+            ]);
+
+            // Rotate the model
+            if(index == 0){
+              model.rotation.y = -90;
+              model.scale.set(0.5, 0.5, 0.5);
+            }
+            if(index == 1){
+              model.rotation.y = 0;
+              model.scale.set(1.5, 1.5, 1.5);
+            }
+            if(index == 2){
+              model.rotation.y = 0;
+              model.scale.set(5, 5, 5);
+            }
+            if(index == 3){
+              model.rotation.y = 0;
+              model.rotation.x = 90;
+              model.scale.set(0.2, 0.2, 0.2);
+            }
+            if(index == 4){
+              model.rotation.y = 90;
+              model.scale.set(0.5, 0.5, 0.5);
+            }
+            
+
+            // currentModel = model;
+            models[index] = {model, hotspots, figure};
+            // currentHotspots = hotspots;
+            anchors[index].group.add(model);
+            renderHotspots(figure, hotspots);
+            togglePanelBtn.disabled = false;
+          } catch (e) {
+            console.error(e);
+            showToast('Failed to load model or hotspots.');
+          }
+        }else{
+          models[index].model.visible = true;
+          renderHotspots(models[index].figure, models[index].hotspots);
+          togglePanelBtn.disabled = false;
+        }
+      }
+
+      function onTargetLost(index) {
+        if (models[index]) models[index].model.visible = false;
+      }
+
+      // anchor0.onTargetFound = () => {
+      //   if (currentModel) {
+      //     currentModel.visible = true;
+      //   } else {
+      //     onTargetFound(0);
+      //   }
+      // };
+      // anchor0.onTargetLost = onTargetLost;
+
+      const start = async () => {
+        try {
+          await loadMapping();
+
+          // create anchors for each mapping target
+          mapping.targets.forEach(t => {
+            const anchor = mindarThree.addAnchor(t.targetIndex);
+            anchor.onTargetFound = () => onTargetFound(t.targetIndex);
+            anchor.onTargetLost = () => onTargetLost(t.targetIndex);
+            anchors[t.targetIndex] = anchor;
+          });
+
+          await mindarThree.start();
+          renderer.setAnimationLoop(() => { renderer.render(scene, camera); });
+          hudStart.disabled = true;
+          hudStop.disabled = false;
+          showToast("Camera started. Aim at your target image.");
+        } catch (e) {
+          console.error(e);
+          showToast("Start failed. Check HTTPS/camera/mapping.");
+        }
+      };
+      const stop = async () => {
+        await mindarThree.stop();
+        renderer.setAnimationLoop(null);
+        hudStart.disabled = false;
+        hudStop.disabled = true;
+        showToast("Stopped.");
+      };
+
+      hudStart.addEventListener('click', start);
+      hudStop.addEventListener('click', stop);
+      togglePanelBtn.addEventListener('click', () => {
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+      });
+      langSel.addEventListener('change', () => {
+        lang = langSel.value;
+
+        // re-render lables if current visible target exists
+        Object.values(models).forEach(m => {
+          if(m.model.visible) renderHotspots(m.figure, m.hotspots);
+        });
+        // renderHotspots();
+      });
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.style.display = "inline-block";
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(()=> toast.style.display="none", 2500);
+      }
+    </script>
+  </body>
+</html>

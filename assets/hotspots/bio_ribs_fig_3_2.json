@@ -1,0 +1,71 @@
+{
+  "figure_id": "bio_ribs_fig_3_2",
+  "hotspots": [
+    {
+      "id": "h1",
+      "title": {
+        "en": "True Ribs",
+        "hi": "सच्ची पसलियाँ"
+      },
+      "body": {
+        "en": "\"True ribs\" are the first seven pairs of ribs attached directly to the sternum and function to protect the thoracic organs and aid in breathing.",
+        "hi": "\"सच्ची पसलियां\" पसलियों की पहली सात जोड़ी होती हैं जो सीधे उरोस्थि से जुड़ी होती हैं और वक्षीय अंगों की रक्षा करने तथा सांस लेने में सहायता करने का कार्य करती हैं।"
+      }
+    },
+    {
+      "id": "h2",
+      "title": {
+        "en": "False Ribs",
+        "hi": "झूठी पसलियाँ"
+      },
+      "body": {
+        "en": "\"False Ribs\" are the 8th to 10th pairs of ribs that connect indirectly to the sternum and function to protect the thoracic organs and support breathing.",
+        "hi": "\"झूठी पसलियां\" पसलियों की 8वीं से 10वीं जोड़ी होती हैं जो अप्रत्यक्ष रूप से उरोस्थि से जुड़ती हैं और वक्षीय अंगों की रक्षा करने और सांस लेने में सहायता करने का कार्य करती हैं।"
+      }
+    },
+    {
+      "id": "h3",
+      "title": {
+        "en": "Floating Ribs",
+        "hi": "तैरती पसलियाँ"
+      },
+      "body": {
+        "en": "\"Floating Ribs\" are the 11th and 12th pairs of ribs that are not attached to the sternum and function to protect the kidneys and support muscle attachment.",
+        "hi": "\"फ्लोटिंग रिब्स\" पसलियों की 11वीं और 12वीं जोड़ी होती हैं जो उरोस्थि से जुड़ी नहीं होती हैं और गुर्दे की रक्षा करने और मांसपेशियों के जुड़ाव को सहारा देने का काम करती हैं।"
+      }
+    },
+    {
+      "id": "h4",
+      "title": {
+        "en": "Sternum",
+        "hi": "उरास्थि"
+      },
+      "body": {
+        "en": "\"Sternum\" is a flat bone in the center of the chest that connects the ribs via cartilage and functions to protect the heart and lungs.",
+        "hi": "\"स्टर्नम\" छाती के केंद्र में स्थित एक चपटी हड्डी है जो पसलियों को उपास्थि के माध्यम से जोड़ती है और हृदय और फेफड़ों की रक्षा करने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h5",
+      "title": {
+        "en": "Ribs",
+        "hi": "पसलियां"
+      },
+      "body": {
+        "en": "\"Ribs\" are curved bones forming the rib cage in the thoracic cavity that function to protect the heart and lungs and aid in breathing.",
+        "hi": "\"पसलियां\" वक्ष गुहा में पसलियों का पिंजरा बनाने वाली घुमावदार हड्डियां हैं जो हृदय और फेफड़ों की रक्षा करने और सांस लेने में सहायता करने का कार्य करती हैं।"
+      }
+    },
+    {
+      "id": "h6",
+      "title": {
+        "en": "Vertebral Column",
+        "hi": "रीढ़"
+      },
+      "body": {
+        "en": "\"Vertebral column\" is the backbone extending from the skull to the pelvis that supports the body, protects the spinal cord, and enables movement.",
+        "hi": "\"कशेरुक दंड\" खोपड़ी से श्रोणि तक फैली रीढ़ की हड्डी है जो शरीर को सहारा देती है, रीढ़ की हड्डी की रक्षा करती है, और गति को सक्षम बनाती है।"
+      }
+    }
+  ]
+}

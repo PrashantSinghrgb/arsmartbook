@@ -1,0 +1,148 @@
+{
+  "figure_id": "bio_skull_fig_3_2",
+  "hotspots": [
+    {
+      "id": "h1",
+      "title": {
+        "en": "Frontal Bone",
+        "hi": "ललाट की हड्डी"
+      },
+      "body": {
+        "en": "\"frontal Bone\" is located at the front of the skull and functions to protect the brain and form the forehead and upper eye sockets.",
+        "hi": "\"ललाट अस्थि\" खोपड़ी के सामने स्थित होती है और मस्तिष्क की रक्षा करने तथा माथे और ऊपरी आंख के सॉकेट बनाने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h2",
+      "title": {
+        "en": "Sphenoid Bone",
+        "hi": "स्फेनोइड हड्डी"
+      },
+      "body": {
+        "en": "\"Sphenoid Bone\" is located at the base of the skull behind the eyes and functions to support the brain and connect several cranial bones.",
+        "hi": "\"स्फेनोइड हड्डी\" आंखों के पीछे खोपड़ी के आधार पर स्थित होती है और मस्तिष्क को सहारा देने और कई कपाल हड्डियों को जोड़ने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h3",
+      "title": {
+        "en": "Ethmoid Bone",
+        "hi": "एथमॉइड हड्डी"
+      },
+      "body": {
+        "en": "\"Ethmoid Bone\" is located between the eyes at the roof of the nasal cavity and functions to support the nasal cavity and form part of the eye sockets.",
+        "hi": "\"एथमॉइड हड्डी\" नाक गुहा की छत पर आंखों के बीच स्थित होती है और नाक गुहा को सहारा देने और आंखों के सॉकेट का हिस्सा बनने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h4",
+      "title": {
+        "en": "Lacrimal Bone",
+        "hi": "अश्रु अस्थि"
+      },
+      "body": {
+        "en": "\"Lacrimal bone\" is a small bone in the inner corner of the eye socket that functions to support the eye and house the tear duct.",
+        "hi": "\"लैक्रिमल अस्थि\" आंख के सॉकेट के भीतरी कोने में स्थित एक छोटी हड्डी होती है जो आंख को सहारा देने और आंसू नली को रखने का काम करती है।"
+      }
+    },
+    {
+      "id": "h5",
+      "title": {
+        "en": "Nasal Bone",
+        "hi": "नाक की हड्डी"
+      },
+      "body": {
+        "en": "\"Nasal Bone\" is located in the upper part of the nose and functions to form the bridge of the nose and support cartilage.",
+        "hi": "\"नाक की हड्डी\" नाक के ऊपरी भाग में स्थित होती है और नाक के पुल का निर्माण करने तथा उपास्थि को सहारा देने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h6",
+      "title": {
+        "en": "Zygomatic Bone",
+        "hi": "ज़ाइगोमैटिक हड्डी"
+      },
+      "body": {
+        "en": "\"Zygomatic Bone\" is located on the sides of the face below the eyes and functions to form the cheekbones and part of the eye sockets.",
+        "hi": "\"जाइगोमैटिक हड्डी\" चेहरे के किनारों पर आंखों के नीचे स्थित होती है और गालों की हड्डियों और आंखों के गड्ढों के हिस्से को बनाने का काम करती है।"
+      }
+    },
+    {
+      "id": "h7",
+      "title": {
+        "en": "Maxilla",
+        "hi": "मैक्सिला"
+      },
+      "body": {
+        "en": "\"Maxilla\" is the upper jawbone of the skull that functions to hold the upper teeth and form part of the nose and eye sockets.",
+        "hi": "\"मैक्सिला\" खोपड़ी की ऊपरी जबड़े की हड्डी है जो ऊपरी दांतों को पकड़ने का काम करती है और नाक और आंख के सॉकेट का हिस्सा बनती है।"
+      }
+    },
+    {
+      "id": "h8",
+      "title": {
+        "en": "Mandible",
+        "hi": "जबड़ा"
+      },
+      "body": {
+        "en": "\"Mandible\" is the lower jawbone of the skull that functions to hold the lower teeth and enable chewing and speech.",
+        "hi": "\"मैंडिबल\" खोपड़ी का निचला जबड़ा है जो निचले दांतों को पकड़ने और चबाने और बोलने में सक्षम बनाता है।"
+      }
+    },
+    {
+      "id": "h9",
+      "title": {
+        "en": "Hyoid Bone",
+        "hi": "कष्ठिका अस्थि"
+      },
+      "body": {
+        "en": "\"Hyoid Bone\" is located in the neck between the lower jaw and larynx and functions to support the tongue and aid in swallowing and speech.",
+        "hi": "\"हायॉइड अस्थि\" गर्दन में निचले जबड़े और स्वरयंत्र के बीच स्थित होती है और जीभ को सहारा देने तथा निगलने और बोलने में सहायता करने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h10",
+      "title": {
+        "en": "Occipital Condyle",
+        "hi": "ओसीसीपिटल कॉन्डाइल"
+      },
+      "body": {
+        "en": "\"Occipital condyles\" are rounded projections at the base of the skull that function to articulate with the first cervical vertebra and allow head movement.",
+        "hi": "\"ओसीसीपिटल कोन्डाइल्स\" खोपड़ी के आधार पर गोलाकार उभार होते हैं जो प्रथम ग्रीवा कशेरुका के साथ जुड़ने का कार्य करते हैं और सिर की गति की अनुमति देते हैं।"
+      }
+    },
+    {
+      "id": "h11",
+      "title": {
+        "en": "Occipital Bone",
+        "hi": "पश्चकपाल अस्थि"
+      },
+      "body": {
+        "en": "\"Occipital Bone\" is located at the back and base of the skull and functions to protect the brain and support the head.",
+        "hi": "\"ओसीसीपिटल अस्थि\" खोपड़ी के पीछे और आधार पर स्थित होती है और मस्तिष्क की रक्षा करने और सिर को सहारा देने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h12",
+      "title": {
+        "en": "Temporal Bone",
+        "hi": "टेम्पोरल बोन"
+      },
+      "body": {
+        "en": "\"Temporal Bone\" is located on the sides and base of the skull and functions to protect the brain and house the structures of the ears.",
+        "hi": "\"टेम्पोरल बोन\" खोपड़ी के किनारों और आधार पर स्थित होती है और मस्तिष्क की रक्षा करने और कानों की संरचनाओं को सहारा देने का कार्य करती है।"
+      }
+    },
+    {
+      "id": "h13",
+      "title": {
+        "en": "Parietal Bone",
+        "hi": "पार्श्विका अस्थि"
+      },
+      "body": {
+        "en": "\"Parietal Bone\" is located on the sides and roof of the skull and functions to protect the brain and form the cranial cavity.",
+        "hi": "\"पार्श्विका अस्थि\" खोपड़ी के किनारों और छत पर स्थित होती है और मस्तिष्क की रक्षा करने और कपाल गुहा बनाने का कार्य करती है।"
+      }
+    }
+  ]
+}

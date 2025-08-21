@@ -1,0 +1,82 @@
+{
+  "figure_id": "bio_brain_fig_3_2",
+  "hotspots": [
+    {
+      "id": "h1",
+      "title": {
+        "en": "Cerebral Hemisphere",
+        "hi": "प्रमस्तिष्क गोलार्ध"
+      },
+      "body": {
+        "en": "\"Cerebral Hemispheres\" are the two halves of the forebrain that control higher functions like thinking, memory, movement, senses, language, and creativity.",
+        "hi": "\"प्रमस्तिष्क गोलार्द्ध\" अग्रमस्तिष्क के दो भाग हैं जो सोच, स्मृति, गति, इंद्रियों, भाषा और रचनात्मकता जैसे उच्च कार्यों को नियंत्रित करते हैं।"
+      }
+    },
+    {
+      "id": "h2",
+      "title": {
+        "en": "Corpus Callosum",
+        "hi": "महासंयोजिका"
+      },
+      "body": {
+        "en": "\"Corpus Callosum\" is a thick band of nerve fibers located between the two cerebral hemispheres that connects them and enables communication between the left and right sides of the brain.",
+        "hi": "\"कॉर्पस कैलोसम\" दो मस्तिष्क गोलार्द्धों के बीच स्थित तंत्रिका तंतुओं की एक मोटी पट्टी है जो उन्हें जोड़ती है और मस्तिष्क के बाएं और दाएं हिस्सों के बीच संचार को सक्षम बनाती है।"
+      }
+    },
+    {
+      "id": "h3",
+      "title": {
+        "en": "Forebrain",
+        "hi": "अग्रमस्तिष्क"
+      },
+      "body": {
+        "en": "\"Forebrain\" is the front and largest part of the brain that controls complex functions like thinking, memory, emotions, senses, and voluntary actions.",
+        "hi": "\"अग्रमस्तिष्क\" मस्तिष्क का अगला और सबसे बड़ा हिस्सा है जो सोच, स्मृति, भावनाओं, इंद्रियों और स्वैच्छिक क्रियाओं जैसे जटिल कार्यों को नियंत्रित करता है।"
+      }
+    },
+    {
+      "id": "h4",
+      "title": {
+        "en": "Cerebral Aqueduct",
+        "hi": "सेरेब्रल एक्वाडक्ट"
+      },
+      "body": {
+        "en": "\"Cerebral Aqueduct\" is a narrow canal in the midbrain that connects the third and fourth ventricles, allowing cerebrospinal fluid to flow between them.",
+        "hi": "\"सेरेब्रल एक्वाडक्ट\" मध्य मस्तिष्क में एक संकीर्ण नली है जो तीसरे और चौथे निलय को जोड़ती है, जिससे मस्तिष्कमेरु द्रव उनके बीच प्रवाहित होता है।"
+      }
+    },
+    {
+      "id": "h5",
+      "title": {
+        "en": "Midbrain",
+        "hi": "मध्यमस्तिष्क"
+      },
+      "body": {
+        "en": "\"Midbrain\" is located between the forebrain and hindbrain and functions in vision, hearing, motor control, alertness, and reflexes.",
+        "hi": "\"मध्यमस्तिष्क\" अग्रमस्तिष्क और पश्चमस्तिष्क के बीच स्थित होता है और दृष्टि, श्रवण, मोटर नियंत्रण, सतर्कता और सजगता में कार्य करता है।"
+      }
+    },
+    {
+      "id": "h6",
+      "title": {
+        "en": "Hindbrain",
+        "hi": "पूर्ववर्तीमस्तिष्क"
+      },
+      "body": {
+        "en": "\"Hindbrain\" is the lower back part of the brain that controls balance, coordination, and vital functions like breathing and heartbeat.",
+        "hi": "\"पश्चमस्तिष्क\" मस्तिष्क का निचला पिछला भाग है जो संतुलन, समन्वय और श्वास एवं हृदय की धड़कन जैसे महत्वपूर्ण कार्यों को नियंत्रित करता है।"
+      }
+    },
+    {
+      "id": "h7",
+      "title": {
+        "en": "Spinal Cord",
+        "hi": "मेरुदंड"
+      },
+      "body": {
+        "en": "\"Spinal Cord\" extends from the brainstem down through the vertebral column and functions to transmit nerve signals between the brain and the rest of the body.",
+        "hi": "\"रीढ़ की हड्डी\" मस्तिष्क स्तंभ से कशेरुका स्तंभ के माध्यम से नीचे तक फैली हुई है और मस्तिष्क और शरीर के बाकी हिस्सों के बीच तंत्रिका संकेतों को संचारित करने का कार्य करती है।"
+      }
+    }
+  ]
+}

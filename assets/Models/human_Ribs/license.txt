@@ -1,0 +1,11 @@
+Model Information:
+* title:	Human Thorax
+* source:	https://sketchfab.com/3d-models/human-thorax-4aba9b2ced344bdf8f09656c6a298b50
+* author:	lissiecowley (https://sketchfab.com/lissiecowley)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human Thorax" (https://sketchfab.com/3d-models/human-thorax-4aba9b2ced344bdf8f09656c6a298b50) by lissiecowley (https://sketchfab.com/lissiecowley) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

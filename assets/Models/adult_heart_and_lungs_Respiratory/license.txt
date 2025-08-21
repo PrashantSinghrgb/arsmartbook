@@ -1,0 +1,11 @@
+Model Information:
+* title:	adult heart and lungs
+* source:	https://sketchfab.com/3d-models/adult-heart-and-lungs-be4465abad5b45529d586b7b07c1afc5
+* author:	Education Resource Fund (https://sketchfab.com/bobsmusail)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "adult heart and lungs" (https://sketchfab.com/3d-models/adult-heart-and-lungs-be4465abad5b45529d586b7b07c1afc5) by Education Resource Fund (https://sketchfab.com/bobsmusail) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

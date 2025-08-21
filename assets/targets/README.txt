@@ -1,0 +1,1 @@
+Place your compiled MindAR targets file here as 'targets.mind'. Update index.html → imageTargetSrc to this local file.

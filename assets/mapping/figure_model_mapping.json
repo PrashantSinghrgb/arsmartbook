@@ -1,0 +1,55 @@
+{
+  "schema": "v1",
+  "targets": [
+    {
+      "targetIndex": 0,
+      "figure_id": "bio_brain_fig_3_2",
+      "displayName": "Brain",
+      "class": "18",
+      "subject": "Biology",
+      "chapter": "Neural Control And Coordination",
+      "model_url": "./assets/Models/human_brain_-_right_hemisphere/scene.gltf",
+      "hotspots_url": "./assets/hotspots/bio_brain_fig_3_2.json"
+    },
+    {
+      "targetIndex": 1,
+      "figure_id": "bio_heart_fig_3_2",
+      "displayName": "Heart",
+      "class": "11",
+      "subject": "Biology",
+      "chapter": "Circulatory System",
+      "model_url": "./assets/Models/human_heart_3d_model/scene.gltf",
+      "hotspots_url": "./assets/hotspots/bio_heart_fig_3_2.json"
+    },
+    {
+      "targetIndex": 2,
+      "figure_id": "bio_lungs_fig_3_2",
+      "displayName": "Human Respiratory System",
+      "class": "14",
+      "subject": "Biology",
+      "chapter": "Breathing And Exchange Of Gases",
+      "model_url": "./assets/Models/adult_heart_and_lungs_Respiratory/scene.gltf",
+      "hotspots_url": "./assets/hotspots/bio_lungs_fig_3_2.json"
+    },
+    {
+      "targetIndex": 3,
+      "figure_id": "bio_ribs_fig_3_2",
+      "displayName": "Ribs and Rib Cage",
+      "class": "17",
+      "subject": "Biology",
+      "chapter": "Locomotion And Movement",
+      "model_url": "./assets/Models/human_Ribs/Human_Ribs.glb",
+      "hotspots_url": "./assets/hotspots/bio_ribs_fig_3_2.json"
+    },
+    {
+      "targetIndex": 4,
+      "figure_id": "bio_skull_fig_3_2",
+      "displayName": "Human Skull",
+      "class": "17",
+      "subject": "Biology",
+      "chapter": "Locomotion And Movement",
+      "model_url": "./assets/Models/human_skull/scene.gltf",
+      "hotspots_url": "./assets/hotspots/bio_skull_fig_3_2.json"
+    }
+  ]
+}

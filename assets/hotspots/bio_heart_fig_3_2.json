@@ -1,0 +1,159 @@
+{
+  "figure_id": "bio_heart_fig_3_2",
+  "hotspots": [
+    {
+      "id": "h1",
+      "title": {
+        "en": "Aorta",
+        "hi": "महाधमनी"
+      },
+      "body": {
+        "en": "\"aorta\" is the largest artery arising from the left ventricle of the heart that carries oxygen-rich blood to the entire body.",
+        "hi": "\"महाधमनी\" हृदय के बाएं वेंट्रिकल से निकलने वाली सबसे बड़ी धमनी है जो पूरे शरीर में ऑक्सीजन युक्त रक्त पहुंचाती है।"
+      }
+    },
+    {
+      "id": "h2",
+      "title": {
+        "en": "Vena Cava",
+        "hi": "वीना कावा"
+      },
+      "body": {
+        "en": "\"vena cava\" (superior and inferior) are large veins that carry deoxygenated blood from the body into the right atrium of the heart.",
+        "hi": "\"वेना कावा\" (ऊपरी और निचली) बड़ी शिराएं होती हैं जो शरीर से ऑक्सीजन रहित रक्त को हृदय के दाहिने आलिंद में ले जाती हैं।"
+      }
+    },
+    {
+      "id": "h3",
+      "title": {
+        "en": "Pulmonary Artery",
+        "hi": "फुफ्फुसीय धमनी"
+      },
+      "body": {
+        "en": "\"pulmonary artery\" arises from the right ventricle of the heart and carries deoxygenated blood to the lungs for oxygenation.",
+        "hi": "\"फुफ्फुसीय धमनी\" हृदय के दाएं वेंट्रिकल से निकलती है और ऑक्सीजन रहित रक्त को ऑक्सीजनीकरण के लिए फेफड़ों तक ले जाती है।"
+      }
+    },
+    {
+      "id": "h4",
+      "title": {
+        "en": "Pulmonary Veins",
+        "hi": "फेफड़े के नसें"
+      },
+      "body": {
+        "en": "\"pulmonary veins\" are located between the lungs and the left atrium of the heart and carry oxygenated blood from the lungs to the heart.",
+        "hi": "\"फुफ्फुसीय शिराएँ\" फेफड़ों और हृदय के बाएं आलिंद के बीच स्थित होती हैं और फेफड़ों से हृदय तक ऑक्सीजन युक्त रक्त ले जाती हैं।"
+      }
+    },
+    {
+      "id": "h5",
+      "title": {
+        "en": "Left Atrium",
+        "hi": "बायां आलिंद"
+      },
+      "body": {
+        "en": "\"left atrium\" is the upper left chamber of the heart that receives oxygenated blood from the pulmonary veins and pumps it into the left ventricle.",
+        "hi": "\"बायां आलिंद\" हृदय का ऊपरी बायां कक्ष है जो फुफ्फुसीय शिराओं से ऑक्सीजन युक्त रक्त प्राप्त करता है और उसे बाएं निलय में पंप करता है।"
+      }
+    },
+    {
+      "id": "h6",
+      "title": {
+        "en": "Bundle of HIS",
+        "hi": "उसका बंडल"
+      },
+      "body": {
+        "en": "\"Bundle of His\" is located in the interventricular septum of the heart and conducts electrical impulses from the atria to the ventricles for coordinated contraction.",
+        "hi": "\"बंडल ऑफ हिज़\" हृदय के इंटरवेंट्रीक्यूलर सेप्टम में स्थित होता है और समन्वित संकुचन के लिए आलिंदों से निलय तक विद्युत आवेगों का संचालन करता है।"
+      }
+    },
+    {
+      "id": "h7",
+      "title": {
+        "en": "Left Ventricle",
+        "hi": "बायां वेंट्रिकल"
+      },
+      "body": {
+        "en": "\"left ventricle\" is the lower left chamber of the heart that pumps oxygenated blood into the aorta for distribution throughout the body.",
+        "hi": "\"बायां वेंट्रिकल\" हृदय का निचला बायां कक्ष है जो ऑक्सीजन युक्त रक्त को पूरे शरीर में वितरण के लिए महाधमनी में पंप करता है।"
+      }
+    },
+    {
+      "id": "h8",
+      "title": {
+        "en": "Interventricular Septum",
+        "hi": "इंटरवेंट्रीकुलर सेप्टम"
+      },
+      "body": {
+        "en": "\"interventricular septum\" is the wall between the right and left ventricles of the heart that separates them and helps coordinate ventricular contraction.",
+        "hi": "\"इंटरवेंट्रीकुलर सेप्टम\" हृदय के दाएं और बाएं वेंट्रिकल्स के बीच की दीवार है जो उन्हें अलग करती है और वेंट्रिकुलर संकुचन को समन्वित करने में मदद करती है।"
+      }
+    },
+    {
+      "id": "h9",
+      "title": {
+        "en": "Apex",
+        "hi": "एपेक्स"
+      },
+      "body": {
+        "en": "\"apex\" is the pointed tip of the heart located at the bottom left that helps in the effective pumping of blood from the ventricles.",
+        "hi": "\"एपेक्स\" हृदय का नुकीला सिरा है जो नीचे बाईं ओर स्थित होता है जो निलय से रक्त के प्रभावी पम्पिंग में मदद करता है।"
+      }
+    },
+    {
+      "id": "h10",
+      "title": {
+        "en": "Right Ventricle",
+        "hi": "दायां वेंट्रिकल"
+      },
+      "body": {
+        "en": "\"right ventricle\" is the lower right chamber of the heart that pumps deoxygenated blood into the pulmonary artery for oxygenation in the lungs.",
+        "hi": "\"दायां वेंट्रिकल\" हृदय का निचला दायां कक्ष है जो फेफड़ों में ऑक्सीजन पहुंचाने के लिए ऑक्सीजन रहित रक्त को फुफ्फुसीय धमनी में पंप करता है।"
+      }
+    },
+    {
+      "id": "h11",
+      "title": {
+        "en": "Chordae Tendiane",
+        "hi": "कोर्डे टेंडिनेई"
+      },
+      "body": {
+        "en": "\"chordae tendineae\" are tendon-like cords in the ventricles of the heart that anchor the atrioventricular valves to prevent them from inverting during contraction.",
+        "hi": "\"कॉर्डे टेंडिनेई\" हृदय के निलय में स्थित कण्डरा-जैसी डोरियाँ होती हैं जो संकुचन के दौरान एट्रियोवेंट्रीकुलर वाल्वों को उलटने से रोकने के लिए उन्हें स्थिर रखती हैं।"
+      }
+    },
+    {
+      "id": "h12",
+      "title": {
+        "en": "Atrio-Ventricular",
+        "hi": "एट्रीयो-कोष्ठक"
+      },
+      "body": {
+        "en": "\"atrioventricular (AV) valves\" are located between the atria and ventricles of the heart and function to prevent backflow of blood during ventricular contraction.",
+        "hi": "\"एट्रियोवेंट्रीकुलर (एवी) वाल्व\" हृदय के एट्रिया और निलय के बीच स्थित होते हैं और निलय संकुचन के दौरान रक्त के प्रतिप्रवाह को रोकने का कार्य करते हैं।"
+      }
+    },
+    {
+      "id": "h13",
+      "title": {
+        "en": "Right Atrium",
+        "hi": "ह्रदय का एक भाग"
+      },
+      "body": {
+        "en": "\"right atrium\" is the upper right chamber of the heart that receives deoxygenated blood from the vena cavae and pumps it into the right ventricle.",
+        "hi": "\"दायां आलिंद\" हृदय का ऊपरी दायां कक्ष है जो वेना कावे से ऑक्सीजन रहित रक्त प्राप्त करता है और उसे दाएं निलय में पंप करता है।"
+      }
+    },
+    {
+      "id": "h14",
+      "title": {
+        "en": "Sino-Atrial Node",
+        "hi": "साइनो-एट्रियल नोड"
+      },
+      "body": {
+        "en": "\"sinoatrial (SA) node\" is located in the right atrium of the heart and functions as the natural pacemaker by initiating electrical impulses that regulate heartbeat.",
+        "hi": "\"सिनोएट्रियल (एसए) नोड\" हृदय के दाहिने आलिंद में स्थित होता है और हृदय की धड़कन को नियंत्रित करने वाले विद्युत आवेगों को आरंभ करके प्राकृतिक पेसमेकर के रूप में कार्य करता है।"
+      }
+    }
+  ]
+}

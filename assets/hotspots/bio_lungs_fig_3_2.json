@@ -1,0 +1,126 @@
+{
+  "figure_id": "bio_lungs_fig_3_2",
+  "hotspots": [
+    {
+      "id": "h1",
+      "title": {
+        "en": "Epiglottis",
+        "hi": "कंठच्छद"
+      },
+      "body": {
+        "en": "\"Epiglottis\" is a flap of tissue at the entrance of the larynx that prevents food and liquids from entering the airway during swallowing.",
+        "hi": "\"एपिग्लॉटिस\" स्वरयंत्र के प्रवेश द्वार पर ऊतक का एक फ्लैप है जो निगलने के दौरान भोजन और तरल पदार्थों को वायुमार्ग में प्रवेश करने से रोकता है।"
+      }
+    },
+    {
+      "id": "h2",
+      "title": {
+        "en": "Larynx",
+        "hi": "गला"
+      },
+      "body": {
+        "en": "\"Larynx\" is located in the throat between the pharynx and trachea and functions in voice production and protecting the airway during swallowing.",
+        "hi": "\"स्वरयंत्र\" गले में ग्रसनी और श्वासनली के बीच स्थित होता है और आवाज उत्पन्न करने तथा निगलने के दौरान वायुमार्ग की रक्षा करने का कार्य करता है।"
+      }
+    },
+    {
+      "id": "h3",
+      "title": {
+        "en": "Trachea",
+        "hi": "ट्रेकिआ"
+      },
+      "body": {
+        "en": "\"Trachea\" is a tube located between the larynx and bronchi that functions as the main airway, carrying air to and from the lungs.",
+        "hi": "\"ट्रेकिआ\" स्वरयंत्र और ब्रांकाई के बीच स्थित एक नली है जो मुख्य वायुमार्ग के रूप में कार्य करती है, तथा फेफड़ों से हवा को अंदर और बाहर ले जाती है।"
+      }
+    },
+    {
+      "id": "h4",
+      "title": {
+        "en": "Pleural Membranes",
+        "hi": "फुफ्फुस झिल्ली"
+      },
+      "body": {
+        "en": "\"Pleural Membranes\" are thin layers surrounding the lungs and lining the chest cavity that reduce friction and protect the lungs during breathing.",
+        "hi": "\"प्ल्यूरल झिल्ली\" फेफड़ों के चारों ओर और छाती गुहा को अस्तर करने वाली पतली परतें होती हैं जो घर्षण को कम करती हैं और सांस लेने के दौरान फेफड़ों की रक्षा करती हैं।"
+      }
+    },
+    {
+      "id": "h5",
+      "title": {
+        "en": "Alveoli",
+        "hi": "एल्वियोली"
+      },
+      "body": {
+        "en": "\"Alveoli\" are tiny air sacs in the lungs that function as the site of gas exchange between air and blood.",
+        "hi": "\"एल्वियोली\" फेफड़ों में स्थित छोटी वायु थैलियां होती हैं जो हवा और रक्त के बीच गैस विनिमय के स्थल के रूप में कार्य करती हैं।"
+      }
+    },
+    {
+      "id": "h6",
+      "title": {
+        "en": "Pleural Fluid",
+        "hi": "फुफ्फुस द्रव"
+      },
+      "body": {
+        "en": "\"Pleural Fluid\" is present between the two pleural membranes and functions to reduce friction and allow smooth lung movement during breathing.",
+        "hi": "\"प्ल्यूरल द्रव\" दो प्ल्यूरल झिल्लियों के बीच मौजूद होता है और घर्षण को कम करने तथा सांस लेने के दौरान फेफड़ों की सुचारू गति सुनिश्चित करने का कार्य करता है।"
+      }
+    },
+    {
+      "id": "h7",
+      "title": {
+        "en": "Bronchiole",
+        "hi": "श्वसनी"
+      },
+      "body": {
+        "en": "\"Bronchioles\" are small air passages in the lungs that branch from the bronchi and function to carry air to the alveoli for gas exchange.",
+        "hi": "\"ब्रोंकियोल्स\" फेफड़ों में छोटे वायु मार्ग होते हैं जो ब्रोन्कियल से निकलते हैं और गैस विनिमय के लिए वायु को एल्वियोली तक ले जाने का कार्य करते हैं।"
+      }
+    },
+    {
+      "id": "h8",
+      "title": {
+        "en": "Diaphragm",
+        "hi": "डायाफ्राम"
+      },
+      "body": {
+        "en": "\"Diaphragm\" is a dome-shaped muscle located below the lungs that functions in breathing by contracting and relaxing to change thoracic cavity pressure.",
+        "hi": "\"डायाफ्राम\" फेफड़ों के नीचे स्थित एक गुंबद के आकार की मांसपेशी है जो वक्ष गुहा के दबाव को बदलने के लिए सिकुड़ने और शिथिल होने के द्वारा सांस लेने में कार्य करती है।"
+      }
+    },
+    {
+      "id": "h9",
+      "title": {
+        "en": "Lung",
+        "hi": "फेफड़े"
+      },
+      "body": {
+        "en": "\"Lungs\" are located in the chest cavity on either side of the heart and function in gas exchange by supplying oxygen to the blood and removing carbon dioxide.",
+        "hi": "\"फेफड़े\" हृदय के दोनों ओर छाती गुहा में स्थित होते हैं और रक्त में ऑक्सीजन की आपूर्ति करके और कार्बन डाइऑक्साइड को हटाकर गैस विनिमय का कार्य करते हैं।"
+      }
+    },
+    {
+      "id": "h10",
+      "title": {
+        "en": "Cut end of Rib",
+        "hi": "पसली का कटा हुआ सिरा"
+      },
+      "body": {
+        "en": "\"Cut end of the Rib\" is the cross-sectional end of a rib bone in the thoracic cage that helps protect chest organs and supports breathing movements.",
+        "hi": "\"पसली का कटा हुआ सिरा\" वक्षीय पिंजरे में पसली की हड्डी का अनुप्रस्थ काट वाला सिरा होता है जो छाती के अंगों की रक्षा करने और श्वास लेने की गतिविधियों को सहारा देने में मदद करता है।"
+      }
+    },
+    {
+      "id": "h11",
+      "title": {
+        "en": "Bronchus",
+        "hi": "श्वसनी"
+      },
+      "body": {
+        "en": "\"Bronchus\" is located between the trachea and the bronchioles and functions to carry air into each lung.",
+        "hi": "\"ब्रोंकस\" श्वासनली और ब्रोन्किओल्स के बीच स्थित होता है और प्रत्येक फेफड़े में हवा ले जाने का कार्य करता है।"
+      }
+    }
+  ]
+}
