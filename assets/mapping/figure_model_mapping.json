@@ -38,7 +38,7 @@
       "class": "17",
       "subject": "Biology",
       "chapter": "Locomotion And Movement",
-      "model_url": "./assets/Models/human_Ribs/Human_Ribs.glb",
+      "model_url": "./assets/Models/human_Ribs/Human_Ribs.gltf",
       "hotspots_url": "./assets/hotspots/bio_ribs_fig_3_2.json"
     },
     {
